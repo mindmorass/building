@@ -1,0 +1,5 @@
+name: sso-saml
+description: |
+  HTTP mod_auth_mellon
+version: 0.0.1
+category: SSO

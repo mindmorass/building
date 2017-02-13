@@ -1,0 +1,18 @@
+sso-saml:
+  image: sso-saml:5000
+  labels:
+    - io.rancher.container.hostname_override: container_name
+  volumes_from:
+    - sso-saml-datavolume
+
+sso-saml-datavolume:
+  labels:
+    elasticsearch.datanode.config.version: '0'
+    io.rancher.container.hostname_override: container_name
+    io.rancher.container.start_once: true
+  volumes:
+    - /usr/share/elasticsearch/data
+    - /usr/share/elasticsearch/config
+    - /opt/rancher/bin
+  entrypoint: /bin/true
+  image: sso-saml-datavolume:5000
