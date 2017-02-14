@@ -1,0 +1,5 @@
+name: SSO SAML
+description: |
+  SSO SAML with HTTPD and mod_auth_mellon
+version: 0.0.1
+category: sso

@@ -1,9 +1,0 @@
-.catalog
-  name "SSO-SAML"
-  version: "0.0.1"
-  description: SSO proxy with HTTPD mod_auth_mellon
-  questions:
-    - variable:
-      label:
-      description: |
-      type: certificate
