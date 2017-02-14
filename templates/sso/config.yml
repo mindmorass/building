@@ -1,4 +1,4 @@
-name: sso-saml
+name: sso
 description: |
   SSO SAML with HTTPD mod_auth_mellon
 version: 0.0.1
